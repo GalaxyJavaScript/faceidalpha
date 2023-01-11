@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>FACE ID ALPHA</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h3 class="btn btn-default heading">FACE ID ALPHA by ahuja</h3>
+            
+            <h4>Learn a bit about the system:
+                <br>
+                 
+                This system is not as advanced as a system your phone, iPad/tablet or laptop/desktop PC might have.
+                This program is not bootstrap coded either but, it may be by the time the BETA version comes out.
+                Thank you to Teachable Machine to provide the data for the project!
+            </h4>
+
+            <h4>Learn about real face ID:
+
+                <br>
+                The way your other face ID compatible device's face ID might work is, the apply iPhone notch (Where face ID id located) is loaded with lights and sensors. Every time you pick up your phone, it detects a face using a light, even in the dark. The IR sensor now takes an IR image. A dot projector projects 30K+ invisible dots along your face. The phone uses thier powerful nerual networks and runs your IR and dots scan through. This creates a mathematical model of your face. The phone then checks the model against the model that you stored when you set up your face ID. If it matches, you unlock the phone and if not, try again and in about 3 attempts, you then HAVE to use passcode. Remember how this all happens in real time, in a matter of seconds!
+            </h4>
+
+            <label>Face ID Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="take_snapshot();" class="btn btn-danger">Capture Image</button>
+      <br><br>
+      <button onclick="check();" class="btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Person/Item :  <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+        </center>
+    </body>
+
+
+</html>
